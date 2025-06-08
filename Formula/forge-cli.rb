@@ -7,20 +7,20 @@ class ForgeCli < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/getditto/homebrew-forge/releases/download/v#{version}/forge-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "1dab470492dbb041b012342f4b12dd033cca927ad79c1f1931df24415e028a46"
+      sha256 "dcf96d09ef41700cc2256f53828b8534126a26fc73dc7f238d0c28432d219c60"
     else
       url "https://github.com/getditto/homebrew-forge/releases/download/v#{version}/forge-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "7e4f798bbf80e549b078e889167e65a96ca6e17387bc214c8648a48ad66820d5"
+      sha256 "fa39180f880d40bf3327eeabde1a1c99597a173b3c990cb4b0af5b3ca82e6c2e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/getditto/homebrew-forge/releases/download/v#{version}/forge-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "131eedd4361e24d37bcfb85182ba3deb54229a0599441d5b446f96634cd53e8f"
+      sha256 "397f8992813ccf3125bde8fa0e41c779d009661812879adf4db9778567674f94"
     else
       url "https://github.com/getditto/homebrew-forge/releases/download/v#{version}/forge-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1ad06863fc4feb37a905ebbe550b5f025af7b00ef09dc0e031ea3ff463664aab"
+      sha256 "f61a06a0b551b31247cd53bdb4c3889363e6979d0a98054c8180dc6fddb1bb34"
     end
   end
 
