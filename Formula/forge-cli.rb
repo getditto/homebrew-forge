@@ -26,9 +26,6 @@ class ForgeCli < Formula
 
   def install
     bin.install "forge"
-    
-    # Install shell completions
-    generate_completions_from_executable(bin/"forge", "completions")
   end
 
   def caveats
