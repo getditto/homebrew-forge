@@ -4,25 +4,23 @@ class Forge < Formula
   version "0.1.0"
   license "MIT"
 
-  # URL will be updated with each release
-  # For now, using placeholder URLs - will be replaced by release script
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/getditto/forge-workflow/releases/download/v#{version}/forge-cli-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "PLACEHOLDER_SHA256_MACOS_ARM64"
+      url "https://github.com/getditto/homebrew-forge/releases/download/v#{version}/forge-cli-#{version}-aarch64-apple-darwin.tar.gz"
+      sha256 ""
     else
-      url "https://github.com/getditto/forge-workflow/releases/download/v#{version}/forge-cli-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "PLACEHOLDER_SHA256_MACOS_X64"
+      url "https://github.com/getditto/homebrew-forge/releases/download/v#{version}/forge-cli-#{version}-x86_64-apple-darwin.tar.gz"
+      sha256 ""
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/getditto/forge-workflow/releases/download/v#{version}/forge-cli-#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "PLACEHOLDER_SHA256_LINUX_ARM64"
+      url "https://github.com/getditto/homebrew-forge/releases/download/v#{version}/forge-cli-#{version}-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 ""
     else
-      url "https://github.com/getditto/forge-workflow/releases/download/v#{version}/forge-cli-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "PLACEHOLDER_SHA256_LINUX_X64"
+      url "https://github.com/getditto/homebrew-forge/releases/download/v#{version}/forge-cli-#{version}-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 ""
     end
   end
 
